@@ -38,6 +38,21 @@ public class ClientService {
 	public ClientDTO findById(Long id) {
 		Optional<Client> obj = repository.findById(id);
 		Client entity = obj.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
+<<<<<<< HEAD
+		return new ClientDTO(entity);
+	}
+
+	@Transactional
+	public ClientDTO insert(ClientDTO dto) {
+		Client entity = new Client();
+		entity.setName(dto.getName());
+		entity.setCpf(dto.getCpf());
+		entity.setIncome(dto.getIncome());
+		entity.setBirthDate(dto.getBirthDate());
+		entity.setChildren(dto.getChildren());
+		entity = repository.save(entity);
+=======
+>>>>>>> 32cb795 (Find Category by id, exception handling)
 		return new ClientDTO(entity);
 	}
 }
