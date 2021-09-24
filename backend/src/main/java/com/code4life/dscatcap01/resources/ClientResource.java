@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.code4life.dscatcap01.entities.Client;
+import com.code4life.dscatcap01.dto.ClientDTO;
 import com.code4life.dscatcap01.services.ClientService;
 
 @RestController
@@ -19,7 +19,7 @@ public class ClientResource {
 	private ClientService service;
 	
 	@GetMapping
-	public ResponseEntity<List<Client>> findAll() {
+	public ResponseEntity<List<ClientDTO>> findAll() {
 		/*
 		List<Client> list = new ArrayList<>();		
 		Instant instantOne = Instant.parse("2010-01-19T17:35:30.01Z");
@@ -33,7 +33,7 @@ public class ClientResource {
 		list.add(new Client(4L, "Joana Margarida Narciso", "5581567891", 6200.0, instantFour, 4));
 		list.add(new Client(5L, "Daniel Alexandre Silva Antunes", "5585681891", 6000.0, instantFive, 0));
 		*/
-		List<Client> list = service.findAll();
+		List<ClientDTO> list = service.findAll();
 		return ResponseEntity.ok().body(list);
 	}
 }
