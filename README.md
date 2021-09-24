@@ -49,6 +49,27 @@ O projeto deverá estar com um ambiente de testes configurado com acesso a Base 
 	<artifactId>spring-boot-starter-security</artifactId>
 </dependency>
 ```
+## Arquivos de configuração
+
+### application.properties
+
+```bash
+spring.profiles.active=test
+
+spring.jpa.open-in-view=false
+```
+### application-test.properties
+
+```bash
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.username=sa
+spring.datasource.password=
+
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+```
+
+
 ## Autor
 Lenine Ferrer de Pestana <br />
 Email: leninepestana@gmail.com
