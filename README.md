@@ -1,6 +1,6 @@
 ## DSCatalog trabalho capítulo 1
-### Enunciado
-📝 Criação de projeto Spring Boot 2.4.x contendo um CRUD completo de web services REST para acessar um recurso de clientes, contendo as cinco operações básicas aprendidas no capítulo:
+### 📝 Enunciado
+Criação de projeto Spring Boot 2.4.x contendo um CRUD completo de web services REST para acessar um recurso de clientes, contendo as cinco operações básicas aprendidas no capítulo:
 -	Busca paginada de recursos
 -	Busca de recurso por id
 -	Inserir novo recurso
