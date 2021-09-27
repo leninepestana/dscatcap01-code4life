@@ -9,6 +9,29 @@ Projeto Spring Boot 2.4.4 contendo um CRUD completo de web services REST para ac
 
 Projeto configurado em ambiente de testes com acesso a Base Dados H2, uso do Maven como gerenciador de dependência, e Java 11 como linguagem.
 
+## Competências
+-	Criar projeto Spring Boot
+-	Criar monorepo Git
+-	Organizar o projeto em camadas
+    -	Controlador REST
+    -	Serviço
+    -	Acesso a dados (Repository)
+-	Criar entidades
+-	Configurar perfil de teste do projeto
+-	Seeding da base de dados
+-	Criar web services REST
+    -	Parâmetros de rota @PathVariable
+    -	Parâmetros de requisição @RequestParam
+    -	Corpo de requisição @RequestBody
+    -	Resposta da requisição ResponseEntity<T>
+-	Padrão DTO
+-	CRUD completo
+-	Tratamento de exceções
+-	Postman (coleções, ambientes)
+-	Dados de auditoria
+-	Paginação de dados
+-	Associações entre entidades (N-N)
+
 ## Modelo Conceitual
 ![Client diagram](https://user-images.githubusercontent.com/22635013/134638920-1ccbd8c8-0f04-47aa-9a06-b061c58e08b8.jpg)
 
