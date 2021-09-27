@@ -222,7 +222,7 @@ spring.h2.console.path=/h2-console
     "children" : 5
 }
 ```
-### Deleção de cliente
+### Remoção de cliente
 `DELETE /clients/1`
 
 
